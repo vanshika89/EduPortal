@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/Navbar.css' %}"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+    integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+  <title>Home_page</title>
+</head>
+
+<body>
+  <div class="NavBar">
+    <div class="menu">
+      <div class="navtop">
+        <div class="icon">
+          <h3><span class="Eicon" style="color: #0662db ;">Edu</span><span class="edu">Portal</span> <i
+              class="bi bi-pen-fill pen"></i></h3>
+        </div>
+        <div class="list_menu">
+          <ul>
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'success' %}">Courses</a></li>
+            <li><a href="{% url 'Blogs' %}">Blogs</a> </li>
+            <li><a href="{% url 'index' %}">Student Forum</a></li>
+            <li><a href="{% url 'CareerCouncelling' %}">Career Councelling</a></li>
+            <li><a href="{% url 'login' %}"><span>Log Out</span><i class="bi bi-box-arrow-in-right log"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="HomePage">
+      <div class="homediv">
+        <div class="text">Let's Grow Your <br>
+          <span style="color: rgb(76, 190, 0);">Education</span> Level up <br> with <span
+            style="color: rgb(14, 104, 96);" class="Eicon">Edu</span><span class="edu">Portal</span> <i
+            class="bi bi-pen-fill pen"></i>
+          <div class="start_btn"><button class="btn" id="getstarted">Get Started</button></div>
+        </div>
+        <div class="image">
+          <img src="{% static 'media/online-edu-removebg-preview.png' %}" alt="online-edu" width="600" height="400" />
+        </div>
+      </div>
+    </div>
+    <div class="home_subject">
+    </div>
+    <div class="homediv2">
+      <div class="subjects">
+        <h1 class="top_category">Top Categories</h1>
+        <hr class="line">
+        <div class="left_menu">
+          <div>
+            <a href="https://www.tutorialspoint.com/personal_development_masterclass/index.asp">
+              <div class="domain_menu" id="Domain_account">
+                <div class="domain_image"><img src="https://img.icons8.com/nolan/64/personal-growth.png" /></div>
+                <div class="menu_heading">Personal Growth</div>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.geeksforgeeks.org/engineering-mathematics-tutorials/">
+              <div class="domain_menu">
+                <div class="domain_image"><img src="https://img.icons8.com/nolan/96/math.png" /></div>
+                <div class="menu_heading">Mathmatics</div>
+              </div>
+            </a>
+          </div>
+          <div><a href="https://www.tutorialspoint.com/data_structures_algorithms/index.htm">
+              <div class="domain_menu">
+                <div class="domain_image"><img src="https://img.icons8.com/nolan/96/process.png" /></div>
+                <div class="menu_heading">Algorithm</div>
+              </div>
+            </a></div>
+          <div>
+            <a href="https://www.tutorialspoint.com/data_structures_algorithms/index.htm">
+              <div class="domain_menu">
+                <div class="domain_image"><img src="https://img.icons8.com/nolan/64/parallel-tasks.png" /></div>
+                <div class="menu_heading">Data Structure </div>
+              </div>
+            </a>
+          </div>
+          <div><a href="https://www.tutorialspoint.com/marketing_management/index.htm">
+              <div class="domain_menu">
+                <div class="domain_image"><img src="https://img.icons8.com/nolan/96/commercial.png" /></div>
+                <div class="menu_heading">Marketing</div>
+              </div>
+            </a></div>
+          <div>
+            <a href="https://www.tutorialspoint.com/python_data_science/python_data_science_introduction.htm">
+              <div class="domain_menu" id="sent_mails">
+                <div class="domain_image"><img src="https://img.icons8.com/nolan/96/combo-chart.png" /></div>
+                <div class="menu_heading">Data Science</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="homediv3">
+        <h2 class="upcoming_event">Ongoing Events</h2>
+        <hr class="line">
+        <div class="alleventinfo">
+          <div class="event">
+            <div class="event_image">
+              <img src="{% static 'media/1.jpg' %}" alt="" width="200" height="210" />
+            </div>
+            <div class="event_info">
+              <div class="about_event">
+                <div>
+                  <h2>Coding Ninja Event</h2>
+                </div>
+                <div>
+                  <h4>Date : 12th February 2022 </h4>
+                  <h4>Time : 5 PM-8 PM </h4>
+                </div>
+                <div>
+                  <p>Run through the wave of codes smoothly and showcase your coding skills to stay ahead amongst your
+                    peers. Coding Ninjas brings to you Code war in collaboration with ENCYPT- THE TECH SOCIETY, COLLEGE
+                    OF VOCATIONAL STUDIES, DU an Online coding test that'll tease your brains! </p>
+                </div>
+              </div>
+              <div class="gotoevent"><a
+                  href="https://www.codingninjas.com/events/code-war-encypt-the-tech-society-college-of-vocational-studies-du">
+                    <button id="code" class="btnn">Go To Event</button></a></div>
+
+            </div>
+          </div>
+          <div class="event">
+            <div class="event_image">
+              <img src="{% static 'media/2.jpg' %}" alt="" width="200" height="210" />
+            </div>
+            <div class="event_info">
+              <div class="about_event">
+                <div>
+                  <h2>Quiz Compitition</h2>
+                </div>
+                <div>
+                </div>
+                <div>
+                  <p>Welcome to web development quiz. Test your knowledge </p>
+                </div>
+              </div>
+              <div class="gotoevent"><button id="btnn" class="btnn">Go To Event</button></div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event_image">
+              <img src="{% static 'media/3.jpg' %}" alt="" width="200" height="210" />
+            </div>
+            <div class="event_info">
+              <div class="about_event">
+                <div>
+                  <h2>Webinars</h2>
+                </div>
+                <div>
+                  <h4>Date: 10th Feb 2022</h4>
+                  <h4>Time: 5:00 PM - 6:00 PM</h4>
+                </div>
+                <div>
+                  <p>Give your career a head-start and know how you can get closer to your dream job by refining your
+                    coding skills. Coding Ninjas in collaboration with Shri Ramdeobaba college of engineering brings you
+                    an exclusive webinar on Placement Interview Preparation.</p>
+                </div>
+              </div>
+              <div class="gotoevent"><a
+                  href="https://www.codingninjas.com/events/placement-interview-preparation-shri-ramdeobaba-college-of-engineering"><button
+                    class="btnn">Go To Event</button></a></div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event_image">
+              <img src="{% static 'media/3 (1).jpg' %}" alt="" width="200" height="210" />
+            </div>
+            <div class="event_info">
+              <div class="about_event">
+                <div>
+                  <h2>workshop</h2>
+                </div>
+                <div>
+                  <h4>Date : 22/12/2021</h4>
+
+                    <h4>Time : 5:00 PM - 7:00 PM</h4> 
+                </div>
+                <div>
+                  <p>Give your career a head-start and know how you can get closer to your dream job by refining your
+                    coding skills. Coding Ninjas in collaboration with National Institute of Technology, Andhra Pradesh
+                    brings you an exclusive workshop on Full stack Development.</p>
+                </div>
+              </div>
+              <div class="gotoevent"><a
+                  href="https://www.codingninjas.com/events/hands-on-workshop-on-full-stack-development-national-institute-of-technology-andhra-pradesh"><button
+                    class="btnn">Go To Event</button></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+<script>
+  document.getElementById('btnn').onclick = function () {
+    location.href = '{% url 'Quiz' %}'
+  }
+  document.getElementById('getstarted').onclick = function () {
+    location.href = '{% url 'AllCourses' %}'
+  }
+
+</script>
+
+</html>

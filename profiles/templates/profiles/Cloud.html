@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  {% load static %}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/Navbar.css' %}"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+    integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+  <title>Cloud</title>
+</head>
+
+<body>
+  <div class="vlogdata">
+    <div class="vlognav">
+      <div>
+        <h1 class="vlogheading">Why cloud is leading to a renaissance of IT infrastructure</h1>
+      </div>
+      <div id="gotoblogpage" class="gotobtn"><button class="btn">Go To Blog Page</button></div>
+    </div>
+    <div>
+      <div class="vlogdata">
+        <p>One of the biggest misconceptions about cloud? That it somehow makes IT infrastructure less important.
+          Nothing could be further from the truth. In fact, infrastructure has never been more critical to the success
+          of the business.
+          That’s because technology itself has never played a greater role than it does today—helping companies deliver
+          profitable growth, create innovative experiences and operate in a responsible, sustainable way.
+          <br>
+          <br>
+          Infrastructure is the backbone of the modern “ever-ready” digital enterprise. As discussed in our research on
+          the Cloud Continuum, cloud is no longer just a single, static destination, but an operating model for
+          innovation across a continuum of capabilities and technologies—everything from public cloud to smart devices,
+          digital factories and connected vehicles.
+          <br><br>
+          Infrastructure is the foundation that allows companies to seamlessly operate this vast extension of
+          capability. It provides the compute, network, workplace and database platform capabilities needed to run the
+          applications that run the business. It also provides the foundation on which exceptional customer and employee
+          experiences can be built.
+          <br><br>
+          <div class="imgvirtual"><img src="{% static 'media/cloudcomp.png' %}" alt="virtual"  height="300" width="700"/></div>
+        <h2>New Infrastructure, new challenges</h2>
+        <p>
+          However, as the technology continues to evolve and accelerate—and the demands placed on it continue to grow—IT
+          departments are under ever-more-intense pressure. Traditional approaches are increasingly limiting their
+          ability to adapt, innovate and compete.
+          What’s changed? As Marc Andreessen famously said, software is eating the world. And this is particularly true
+          in infrastructure engineering. The shift to infrastructure-as-code is creating huge new opportunities for
+          rapid and agile innovation.
+          <br><br>
+          At the same time, enterprises are recognizing that “cloud” does not simply mean public cloud. The evolution of
+          the Cloud Continuum requires organizations to dynamically balance public, private, hybrid, co-location,
+          multi-cloud, and edge to support the ever-changing needs of the business.
+          <br><br>
+          Plus, consider the distributed nature of today’s workspaces and workloads. In the past, an enterprise
+          typically had a limited number of sites and a finite number of connections to worry about. Now—and especially
+          because of the pandemic—connectivity is required anywhere and everywhere.
+          For a large global organization, this can mean hundreds of thousands of new locations that need continuous
+          connectivity to the cloud, which dramatically increases the need for modern enterprise networks. These
+          networks must meet a wide and rapidly changing set of business requirements and provide seamless, secure
+          connectivity to data, applications and platforms.
+          <br><br>
+          <div class="imgvirtual"><img src="{% static 'media/cloudcomp1.png' %}" alt="virtual"  height="300" width="700"/></div>
+        <h2>A renaissance in infrastructure</h2>
+        <p>
+          It’s clear that IT infrastructure has become a much more complex environment to orchestrate. If you don’t
+          rethink the way you architect in that environment, you risk ending up with a “spaghetti soup” of
+          complexity—which can have serious real-world consequences.
+          <br<<br>
+            In the worst cases, IT performance can actually deteriorate in the cloud. Despite the world-leading
+            infrastructure, the high-quality assets, and the more democratized innovation you get from the cloud
+            providers,
+            an enterprise can still struggle to match the level of performance the organization achieved in its
+            on-premises
+            data center. Why? Because the infrastructure and processes, and the skills supporting them, aren’t able to
+            keep
+            pace with new digital business requirements.
+            This need to rearchitect for the cloud is why we say there’s a renaissance in infrastructure. And a renewed
+            recognition of its criticality to the modern enterprise.
+            <br>
+            <br>
+            This renaissance is also evident in the availability, sophistication and scalability infrastructure can now
+            deliver. In fact, this is now the single biggest differentiator for a digital business. Winning companies
+            architect their infrastructure for competitive advantage across this wide and expanding array of capability.
+            This is one of the key reasons the digital natives have had such huge and disruptive success. Modern IT
+            infrastructure enables enterprises to do new things, create new products, develop new offerings, enter new
+            markets, and conduct new experiments at a pace that was previously unthinkable.
+        </p>
+        </p>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+<script>
+ 
+    document.getElementById('gotoblogpage').onclick = function () {
+    location.href = "{% url 'Blogs' %}"
+  }
+</script>
+</html>

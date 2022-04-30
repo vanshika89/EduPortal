@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Navbar.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+    integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+  <title>IOT</title>
+</head>
+
+<body>
+  <div class="vlogdata">
+    <div class="vlognav">
+      <div>
+        <h1 class="vlogheading">Top 10 IoT use cases—and what they demand from your network</h1>
+      </div>
+      <div id="gotoblogpage" class="gotobtn"><button class="btn">Go To Blog Page</button></div>
+    </div>
+    <div>
+      <div class="vlogdata">
+        <p>When I was growing up in Brazil I loved the “Can you spot the differences?” puzzle in Coquetel, a children’s
+          magazine. The challenge was to spot slight differences in ten seemingly identical drawings. I thought about
+          similarities and differences when I read the Top 10 IoT Use Cases report from IoT Analytics, published October
+          2021. These use cases include remote asset monitoring, process automation, vehicle fleet management,
+          optimizing plant or asset performance, and more. All 10 use-cases share certain network requirements, like
+          cybersecurity, tolerance for harsh environmental conditions, and a way to scale management as the deployment
+          grows. But other network requirements vary based on the use case.
+          <br>
+          Here are some questions to help you identify network requirements for your IoT use cases.
+          <br>
+          <div class="imgvirtual"><img src="{% static 'media/IOT2.jpg' %}" alt="virtual"  height="300" width="900"/></div>
+        <h2>Are your connected assets stationary or moving? How much data will they transmit?</h2>
+        <p>
+          It’s relatively simple to monitor data from stationary assets. For example, Bouchaine Vineyards collects data
+          from temperature sensors to know when and where to irrigate. Municipal transportation departments monitor
+          traffic signal controllers to know when the controllers need servicing. If you’re connecting stationary
+          assets, the main considerations are:
+          <br>
+          1. Bandwidth: You’ll need more if your devices generate lots of data (e.g., point-tilt-zoom HD cameras) or if
+          you’re backhauling data from many devices. <br>
+          2. Type of network: Depending on what’s available, you might connect assets to a wired network, Wi-Fi, 3G,
+          public
+          or private LTE, 5G, wireless backhaul, etc. To avoid the complexity of managing different kinds of routers,
+          look for one that gives you a choice of communications modules. <br>
+          3.Reliability: If your use case is mission-critical, you’ll need ultra-reliable connectivity. A dropped
+          connection that halts operations can cause financial loss.
+        </p>
+      
+        <p>
+          It gets more complicated when we think about connected assets that are in motion— for example, Wi-Fi hotspots
+          on trains, environmental sensors on trucks transporting perishables, or container-handling equipment at ports.
+          Network requirements in these use cases include low latency and seamless hand-offs between wireless networks.
+          If you’re connecting moving equipment – for example, robots, cranes, autonomous vehicles, etc. in warehouses,
+          ports, and mines – ultra-high reliability is crucial to prevent accidents.
+          <br>
+        <h2>Is sensor data used for real-time decisions?</h2>
+        <p>
+          If so, you’ll need a highly responsive network, with low latency. For example, think about tele-remote
+          operation of vehicles in ports and mines, where an operator in the office remotely controls a vehicle while
+          viewing real-time video feeds from a vehicle-mounted camera. Delays in the video feed can mean the operator
+          misses a turn or obstacle, causing an accident. In contrast, if you’re simply checking that perishables in a
+          truck weren’t exposed to unsafe conditions during the trip, a little latency won’t make a difference.
+          <br>
+        </p>
+        <div class="imgvirtual"><img src="{% static 'media/iot.png' %}" alt="virtual"  height="400" width="900"/></div>
+        <h2>Common denominators: cybersecurity, remote management, rugged enclosures</h2>
+        <p>
+          No matter how you’re using industrial IoT, some network features are mandatory. Security protections are one.
+          Cyberattacks can cause downtime, revenue loss, worker safety issues, quality problems, and disruption of
+          critical infrastructure services. We design physical security and cybersecurity into all Cisco industrial
+          networking products. For example, hardware devices are tamperproof. Software is authenticated and protected.
+          All traffic is encrypted with the latest standards. And Cisco Cyber Vision provides visibility into all
+          connected assets and monitors their traffic to flag potential breaches.
+          <br>
+          Another universal requirement is secure remote management of network devices. We have tools that help IT teams
+          efficiently deploy and manage a growing number of connected devices—working from the office or home. These
+          include Cisco DNA Center and Cisco IoT Operations Dashboard.
+          <br>
+          Finally, equipment deployed outdoors or in warehouse-like environments needs to withstand harsh environmental
+          conditions like extreme temperatures, wind, water and salt.
+          <br>
+        </p>
+        <h2>Our industrial IoT portfolio has you covered</h2>
+        <p>Summing up, like the drawings in the Coquetel magazine puzzle, industrial IoT use cases differ in some ways
+          and overlap in others. No matter how you’re using IoT, we have network devices to meet your needs.</p>
+        </p>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+    document.getElementById('gotoblogpage').onclick = function () {
+    location.href = "{% url 'Blogs' %}"
+  }
+</script>
+</html>

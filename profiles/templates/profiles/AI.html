@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/Navbar.css' %}"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+    integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+  <title>Blog AI</title>
+</head>
+
+<body>
+  <div class="vlogdata">
+    <div class="vlognav">
+      <div>
+        <h1 class="vlogheading">The rise of service robots</h1>
+      </div>
+      <div id="gotoblogpage" class="gotobtn"><button class="btn">Go To Blog Page</button></div>
+    </div>
+    <div>
+      <div class="vlogdata">
+        <p>My team has been watching the trend around service robots for a while, and, in all honesty, I thought it was
+          going to be a bit further out. The COVID-19 pandemic changed all that. We’re seeing an acceleration of
+          robotics and the push into physical automation — autonomous robots that are breaking free of fixed locations
+          and can smartly navigate through a variety of spaces, completing their missions independently.
+          <br>
+          <br>
+          Today, robots are being applied across a range of use cases – like cleaning and sanitizing hospitals;
+          delivering food and supplies; inspecting assets; mapping remote, dangerous and inaccessible parts of an
+          infrastructure; and evaluating the health of agricultural crops.
+          <br><br>
+          Autonomous mobile robots come in many form factors, and the software and hardware architecture is different
+          from standard industrial robots. They’re headed into unknown environments where they have to be autonomous.
+          Industrial robots that are in a fixed location have service technicians in case of failure, but autonomous
+          robots must be able to be serviced remotely. David Inggs, CEO of Rocos, a robotics platform company, has said
+          that “the ability of autonomous robots to do jobs in unmanned environments makes them viable to perform tasks
+          in a much wider range of industries.”
+          <br><br>
+          <div class="imgvirtual"><img src="{% static 'media/Ai1.png' %}" alt="virtual"  height="300" width="700"/></div>
+
+        <h2>It takes a village</h2>
+        <p>
+          At Avanade, we’re helping our early adopter clients navigate this landscape, and it takes an ecosystem of
+          partners to make it all work. You not only need the robots, but also the management side, as well as ensuring
+          you’ve got the right scenario and a services company that can bring those integrations together.
+          <br><br>
+          We recently hosted a “Rise of the service robots” webinar in partnership with Rocos. I facilitated a discussion
+          alongside Inggs, Dr. Julio Hajdenberg from Orlando Health, and Aaron Edsinger, CEO and co-founder at Hello
+          Robot.
+          <br><br>
+          1. How to make a success of autonomous robots in the workforce <br>
+          2. Why IoT systems are not fit for operating robots <br>
+          3. How interoperability standards between robot platforms are evolving
+          <br><br>
+          As we keep progressing in this emerging space, we’ll share more, and, as always, feel free to reach out to
+          collaborate.
+        </p>
+      
+
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+<script>
+ 
+  document.getElementById('gotoblogpage').onclick = function () {
+  location.href = "{% url 'Blogs' %}"
+}
+</script>
+</html>

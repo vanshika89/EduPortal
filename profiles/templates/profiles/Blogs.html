@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/Navbar.css' %}"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+    integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+  <title>Blog</title>
+</head>
+
+<body>
+  <div class="NavBar">
+    <div class="menu">
+      <div class="navtop">
+        <div class="icon">
+          <h3><span class="Eicon" style="color: #0662db ;">Edu</span><span class="edu">Portal</span> <i
+              class="bi bi-pen-fill pen"></i></h3>
+        </div>
+        <div class="list_menu">
+          <ul>
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'success' %}">Courses</a></li>
+            <li><a href="{% url 'Blogs' %}">Blogs</a> </li>
+            <li><a href="{% url 'index' %}">Student Forum</a></li>
+            <li><a href="{% url 'CareerCouncelling' %}">Career Councelling</a></li>
+            <li><a href="{% url 'login' %}"><span>Log Out</span><i class="bi bi-box-arrow-in-right log"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="HomePage">
+      <div class="homediv">
+        <div class="text">
+          <h1 class="blogheading">blogs <span><i class="bi bi-arrow-down"></i></span></h1>
+        </div>
+        <div class="imagess">
+          <img src="{% static 'media/blogimg.png' %}" alt="online-edu" width="800" height="500" />
+        </div>
+      </div>
+    </div>
+    <div class="blogs">
+      <div class="vlogs">
+        <div class="imagess">
+          <img class="tech" src="{% static 'media/blockchain.png' %}" alt="blockchain" height="250" width="400" />
+        </div>
+        <div class="content">
+          <h2>History of Bitcoin & the Web3</h2>
+          <p>The first computer networks were invented in the 1960s. ARPANET was a private network of American
+            university computers introduced in 1969, which was initially funded by the Advanced Research Projects Agency
+            of the United States Department of Defense. It went global in 1973, when the computers of research
+            institutions in England and Norway were connected to the network. In 1974, it turned commercial with the
+            integration of the first Internet service provider — Telnet. </p>
+          <div id="blockchain_tech" class="readmore"><button class="btn">Read More</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="blogs">
+      <div class="vlogs">
+        <div class="content">
+          <h2>Why cloud is leading to a renaissance of IT infrastructure</h2>
+          <p>One of the biggest misconceptions about cloud? That it somehow makes IT infrastructure less important.
+            Nothing could be further from the truth. In fact, infrastructure has never been more critical to the success
+            of the business.
+            That’s because technology itself has never played a greater role than it does today—helping companies
+            deliver profitable growth, create innovative experiences and operate in a responsible, sustainable way.</p>
+          <div id="cloud_computing" class="readmore"><button class="btn">Read More</button></div>
+        </div>
+        <div class="imagess">
+          <img class="tech" src="{% static 'media/cloud_computing.png' %}" alt="blockchain" height="250" width="400" />
+        </div>
+      </div>
+    </div>
+    <div class="blogs">
+      <div class="vlogs">
+        <div class="imagess">
+          <img class="tech" src="{% static 'media/virtual_reality.png' %}" alt="blockchain" height="250" width="400" />
+        </div>
+        <div class="content">
+          <h2>Virtual Reality – The New Medium for Everything?</h2>
+          <p>This probably won’t be the last post you’ll read about virtual reality but if it’s the first, I’m taking
+            the opportunity to round up some likely business applications for the not-so-new topic that’s lighting up
+            technology blogs. </p>
+          <div id="virtual_reality" class="readmore"><button class="btn">Read More</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="blogs">
+      <div class="vlogs">
+        <div class="content">
+          <h2>The rise of service robots</h2>
+          <p>My team has been watching the trend around service robots for a while, and, in all honesty, I thought it
+            was going to be a bit further out. The COVID-19 pandemic changed all that. We’re seeing an acceleration of
+            robotics and the push into physical automation — </p>
+          <div id="robot" class="readmore"><button class="btn">Read More</button></div>
+        </div>
+        <div class="imagess">
+          <img id="artificial_intell" class="tech" src="{% static 'media/artificial-intelligence.png' %}" alt="blockchain" height="250"
+            width="400" />
+        </div>
+      </div>
+    </div>
+    <div class="blogs">
+      <div class="vlogs">
+        <div class="imagess">
+          <img class="tech" src="{% static 'media/digital_marketing.png' %}" alt="blockchain" height="250" width="400" />
+        </div>
+        <div class="content">
+          <h2>What is Digital Marketing?</h2>
+          <p>For those of us living and breathing the digital marketing world, we’ve known for a long time how effective
+            digital marketing can be. You will get results that you just can’t get anymore from traditional marketing
+            tactics. </p>
+          <div id="digital_marketing" class="readmore"><button class="btn">Read More</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="blogs">
+      <div class="vlogs">
+        <div class="content">
+          <h2>How to Use Newsletters for Marketing?</h2>
+          <p>Nowadays, marketers rely on various communication channels to reach their customers, such as social media,
+            webinars, and video campaigns. But, these shouldn’t distract you from using the oldest yet most effective
+            methods — emails. </p>
+          <div id="email" class="readmore"><button class="btn">Read More</button></div>
+        </div>
+        <div class="imagess">
+          <img  class="tech" src="{% static 'media/email.png' %}" alt="blockchain" height="250" width="400" />
+        </div>
+      </div>
+    </div>
+    <div class="blogs">
+      <div class="vlogs">
+        <div class="imagess">
+          <img class="tech" src="{% static 'media/blog.png' %}" alt="blockchain" height="250" width="400" />
+        </div>
+        <div class="content">
+          <h2>Top 10 IoT use cases—and what they demand from your network</h2>
+          <p>When I was growing up in Brazil I loved the “Can you spot the differences?” puzzle in Coquetel, a
+            children’s magazine. The challenge was to spot slight differences in ten seemingly identical drawings. I
+            thought about similarities and differences when I read the Top 10 IoT Use Cases report from IoT Analytics,
+            published October 2021. </p>
+          <div id="blogs" class="readmore"><button class="btn">Read More</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  document.getElementById('blockchain_tech').onclick = function () {
+    location.href = "{% url 'Bitcoin' %}"
+  }
+  document.getElementById('virtual_reality').onclick = function () {
+    location.href = "{% url 'Virtualreality' %}"
+  }
+  document.getElementById('digital_marketing').onclick = function () {
+    location.href = "{% url 'Digitalmarketing' %}"
+  }
+  document.getElementById('blogs').onclick = function () {
+    location.href = "{% url 'IOT' %}"
+  }
+  document.getElementById('cloud_computing').onclick = function () {
+    location.href = "{% url 'Cloud' %}"
+  }
+  document.getElementById('email').onclick = function () {
+    location.href = "{% url 'EmailMarketing' %}"
+  }
+  document.getElementById('robot').onclick = function () {
+    location.href = "{% url 'AI' %}"
+  }
+</script>
+
+</html>

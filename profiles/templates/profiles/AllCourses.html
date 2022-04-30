@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/Navbar.css' %}"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+    integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+  <title>Home_page</title>
+</head>
+
+<body>
+  <div class="NavBar">
+    <div class="menu">
+      <div class="navtop">
+        <div class="icon">
+          <h3><span class="Eicon" style="color: #0662db ;">Edu</span><span class="edu">Portal</span> <i
+              class="bi bi-pen-fill pen"></i></h3>
+        </div>
+        <div class="list_menu">
+          <ul>
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'success' %}">Courses</a></li>
+            <li><a href="{% url 'Blogs' %}">Blogs</a> </li>
+            <li><a href="{% url 'index' %}">Student Forum</a></li>
+            <li><a href="{% url 'CareerCouncelling' %}">Career Councelling</a></li>
+            <li><a href="{% url 'superreallogin' %}"><span>Login </span><i class="bi bi-box-arrow-in-right log"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="HomePage">
+      <div class="homediv">
+        <div class="text">
+          <h2 class="blogheading">Explore All Courses <span><i class="bi bi-arrow-down"></i></span></h2>
+        </div>
+        <div class="imagess">
+          <img src="{% static 'media/Courses.png' %}" alt="online-edu" width="800" height="500" />
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="alleventinfo">
+        <div class="event">
+          <div class="event_image">
+            <img src="{% static 'media/1.jpg' %}" alt="" width="200" height="210" />
+          </div>
+          <div class="event_info">
+            <div class="about_event">
+              <div>
+                <h2>Communicating with Diverse Audiences</h2>
+              </div>
+              <div>
+                <p>Explore what drives the way you communicate and develop communication strategies for successful communication in diverse settings.</p>
+              </div>
+            </div>
+            <div class="gotoevent"><a href="https://www.futurelearn.com/courses/communicating-with-diverse-audiences2"><button class="btnn">Explore Course</button></a></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event_image">
+            <img src="{% static 'media/game.png' %}" alt="" width="200" height="210" />
+          </div>
+          <div class="event_info">
+            <div class="about_event">
+              <div>
+                <h2>Video Game Design and Development: Introduction to Game Programming</h2>
+              </div>
+              <div>
+                <p>Discover the essentials of video game programming and learn how you can start your own programming career.</p>
+              </div>
+            </div>
+            <div class="gotoevent"><a href="https://www.futurelearn.com/courses/video-game-design-development"><button id="btnn" class="btnn">Explore Course</button></a></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event_image">
+            <img src="{% static 'media/digital.png' %}" alt="" width="200" height="210" />
+          </div>
+          <div class="event_info">
+            <div class="about_event">
+              <div>
+                <h2>Digital Wellbeing</h2>
+              </div>
+              <div>
+                <p>Do digital technologies affect our wellbeing? Explore the concepts of health, relationships and society in the digital age.</p>
+              </div>
+            </div>
+            <div class="gotoevent"><a href="https://www.futurelearn.com/courses/digital-wellbeing"><button id="btnn" class="btnn">Explore Course</button></a></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event_image">
+            <img src="{% static 'media/reality.png' %}" alt="" width="200" height="210" />
+          </div>
+          <div class="event_info">
+            <div class="about_event">
+              <div>
+                <h2>Construct a Virtual Reality Experience</h2>
+              </div>
+              <div>
+                <p>Discover what virtual reality is, how it can be used, and how you can create it in Javascript.</p>
+              </div>
+            </div>
+            <div class="gotoevent"><a href="https://www.futurelearn.com/courses/construct-a-virtual-reality-experience"><button id="btnn" class="btnn">Explore Course</button></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="alleventinfo">
+      <div class="event">
+        <div class="event_image">
+          <img src="{% static 'media/1.jpg' %}" alt="" width="200" height="210" />
+        </div>
+        <div class="event_info">
+          <div class="about_event">
+            <div>
+              <h2>AI for Healthcare: Equipping the Workforce for Digital Transformation</h2>
+            </div>
+            <div>
+              <p>Learn how artificial intelligence is transforming healthcare and how it can be used to support change in the healthcare workforce.</p>
+            </div>
+          </div>
+          <div class="gotoevent"><a href="https://www.futurelearn.com/courses/artificial-intelligence-in-healthcare"><button id="btnn" class="btnn">Explore Course</button></a></div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event_image">
+          <img src="{% static 'media/maths.png' %}" alt="" width="200" height="210" />
+        </div>
+        <div class="event_info">
+          <div class="about_event">
+            <div>
+              <h2>Introduction to Mathematical Methods for University-Level Science</h2>
+            </div>
+            <div>
+              <p>Prepare to study science subjects at degree level with this introduction to essential mathematical methods and skills.</p>
+            </div>
+          </div>
+          <div class="gotoevent"><a href="https://www.futurelearn.com/courses/mathematical-methods-for-science-at-university"><button id="btnn" class="btnn">Explore Course</button></a></div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event_image">
+          <img src="{% static 'media/how-succeed-job-interview.png' %}" alt="" width="200" height="210" />
+        </div>
+        <div class="event_info">
+          <div class="about_event">
+            <div>
+              <h2>How to Succeed at: Interviews</h2>
+            </div>
+            <div>
+              <p>This free three week course provides the tools you need to succeed at interviews and land your dream job or course place.</p>
+            </div>
+          </div>
+          <div class="gotoevent"><a href="https://www.futurelearn.com/courses/interviews"><button id="btnn" class="btnn">Explore Course</button></a></div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event_image">
+          <img src="{% static 'media/children.png' %}" alt="" width="200" height="210" />
+        </div>
+        <div class="event_info">
+          <div class="about_event">
+            <div>
+              <h2>Anxiety in Children and Young People during COVID-19</h2>
+            </div>
+            <div>
+              <p>Learn about anxiety and discover helpful strategies to support young people struggling with anxiety during the COVID-19 pandemic.</p>
+            </div>
+          </div>
+          <div class="gotoevent"><a href="https://www.futurelearn.com/courses/youth-mental-health-during-covid-19"><button id="btnn" class="btnn">Explore Course</button></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

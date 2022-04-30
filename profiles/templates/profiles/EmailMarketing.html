@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  {% load static %}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/Navbar.css' %}"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+    integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="vlogdata">
+    <div class="vlognav">
+      <div>
+        <h1 class="vlogheading">How to Use Newsletters for Marketing?</h1>
+      </div>
+      <div id="gotoblogpage" class="gotobtn"><button class="btn">Go To Blog Page</button></div>
+    </div>
+    <div>
+      <div class="vlogdata">
+        <p>Nowadays, marketers rely on various communication channels to reach their customers, such as social media,
+          webinars, and video campaigns. But, these shouldn’t distract you from using the oldest yet most effective
+          methods — emails.
+          <br>
+          <br>
+          Emails are still one of the most promising channels for communicating with customers, delivering a return on
+          investment (ROI) of $36 for every $1 spent. And newsletters are the most common emails that DTC brands can
+          send to stay top of mind with their customers or subscribers.
+          <br><br>
+          However, people receive tons of emails from different stores they bought from or newsletters they subscribed
+          to. So, how can you ensure they open and read your newsletters?
+          <br><br>
+        <div class="imgvirtual"><img src="{% static 'media/emailmark.png' %}" alt="virtual" height="300" width="700" /></div>
+        <h2>What are email newsletters?</h2>
+        <p>
+          Email newsletters are a type of email that is sent to your subscribers containing curated informational
+          content such as the latest blogs, product updates, resources, tips, news articles, stories, and many more. In
+          short, there’s no end to what you can include in your newsletters.
+          <br><br>
+          The goal is to share relevant and valuable information with your subscribers, keep them engaged, and foster
+          meaningful relationships. Plus, these help build brand authority and help you better communicate with
+          customers at every stage of their buying journey.
+          <br><br>
+          You can send your newsletters weekly or monthly depending on what you want to share and the frequency in which
+          your customers expect them.
+          <br><br>
+        <h2>Why are email newsletters important? </h2>
+        <p>
+          Now let’s discuss why you need to send out email newsletters to your customers.ces.
+          <br><br>
+            1.More coverage: An average person checks their email 15 times per day or every 37 minutes. Further, business
+            emails make up the majority (126 billion) of emails sent daily. Hence, newsletters can provide ecommerce
+            brands enormous opportunities to get their content, products, and services in front of a massive audience in
+            a short period.<br><br>
+            2.Increased credibility: A newsletter is an excellent opportunity to highlight your expertise in a specific
+            field. When you consistently provide valuable, relevant, and personalized content to your subscribers, you
+            boost their trust in your brand. Plus, they rely on your brand as a source of knowledge, products, and
+            services.<br><br>
+            3.Personalization: Reaching the right audience increases the chances that customers will open and read your
+            newsletter content. Email marketers can consider their customers’ behavior and preferences to create
+            personalized newsletters and deliver content, products, or services that subscribers are more likely to
+            consume. In short, email newsletters can help you meet the needs and expectations of different audience
+            segments.<br><br>
+            4.Strong relationships: Usually, an email newsletter is not perceived as a marketing tactic but an excellent
+            channel for communicating and delivering value to your customers. If you understand who your customers are,
+            know their needs and struggles, and provide valuable, relevant information to them that solves their
+            problems, you’re more likely to not only build but strengthen relationships with them.<br><br>
+            5.High returns: Your subscribers have already shown some interest in your products or services. They are more
+            responsive to your marketing efforts than those you might find via social media or paid channels. This makes
+            newsletters the most effective type of email for engaging your customers. Add to this the relatively low
+            cost of email marketing, and you get a high return on investment of more than $36 for every dollar spent.
+        </p>
+        </p>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+<script>
+  document.getElementById('gotoblogpage').onclick = function () {
+  location.href = '{% url 'Blogs' %}'
+}
+</script>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    {% load static %}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Navbar.css' %}"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+    integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="vlogdata">
+    <div class="vlognav">
+      <div>
+        <h1 class="vlogheading">History of Bitcoin & the Web3</h1>
+      </div>
+      <div id="gotoblogpage" class="gotobtn"><button class="btn">Go To Blog Page</button></div>
+    </div>
+    <div>
+      <div class="vlogdata">
+        <p>The first computer networks were invented in the 1960s. ARPANET was a private network of American university
+          computers introduced in 1969, which was initially funded by the Advanced Research Projects Agency of the United
+          States Department of Defense. It went global in 1973, when the computers of research institutions in England and
+          Norway were connected to the network. In 1974, it turned commercial with the integration of the first Internet
+          service provider — Telnet. That same year, a paper was published describing a working protocol for sharing
+          resources using packet switching among the nodes. A central control component of this protocol was the
+          Transmission Control Program (TCP). In 1982, TCP’s monolithic architecture was divided into a modular
+          architecture that consisted of a transport layer (TCP) and the Internet layer, also known as “Internet Protocol”
+          (IP). Another breakthrough was achieved in 1983 with the introduction of DNS, which made the addressing of nodes
+          within the network more readable.
+  <br>
+  <br>
+          In these first-generation computer networks, the main focus was on connecting a public network of computers with
+          each other, and resolving the question of addressing computers and transmitting data. The network architecture
+          was still based on client-server logic, and secure communication was never a mainstream focus in the early days
+          of the Internet, but selected researchers were intrigued by exactly this question. Ralph Merkle’s cryptographic
+          research in the early 1970s laid the foundation of secure communication over P2P networks. His work
+          conceptualized how to resolve “secure communication over insecure channels” like a computer network, and laid
+          the foundation for modern public-key cryptography. In his dissertation, he furthermore described a method of
+          building collision-resistant cryptographic hash functions. He also filed a patent for a special type of hash
+          table called a Merkle tree that allowed more efficient and secure verification of the contents of large data
+          structures.
+  <br><br>
+  <div class="imgvirtual"><img src="{% static 'media/blockchain1.png' %}" alt="virtual"  height="300" width="900"/></div>
+
+<p>
+
+
+          In 1976, Whitfield Diffie and Martin Hellman built on some of his ideas and created a mechanism for securely
+          exchanging cryptographic keys over a public network. It was one of the earliest implemented examples of public
+          key exchange, and also introduced the concept of digital signatures. Before public key methods were invented,
+          cryptographic keys had to be transmitted in physical form, so secure digital key exchange over public networks
+          was groundbreaking work, without which Bitcoin and subsequent technologies would not work. In 1978, Ron Rivest,
+          Adi Shamir, and Leonard Adleman found a way to create a one-way cryptographic function that was hard to invert.
+          Their algorithm — now known as RSA — introduced the era of asymmetric cryptography, which then evolved into the
+          use of elliptic curves in cryptography — suggested independently by Neal Koblitz and Victor S. Miller in 1985,
+          also a key technology in Bitcoin.
+  <br><br>
+          In public computer networks, the structure of the system — network topology, network latency, and number of
+          computers — is not known in advance. The computer network can therefore consist of unknown and untrusted
+          computers and network links. The size and composition of the network can also change at any time during the
+          execution of a distributed program. The ability to provide and maintain an acceptable level of service in the
+          face of faulty processes is thus essential to the resilience of a network. The focus back in the day was on data
+          transmission in a public network, which was already a hard problem to solve. Neither TCP or IP resolved the
+          question of where to store and how to manage the data. For economic reasons, centralized data storage and
+          management became mainstream. The problem with client-server networks is that the system administrators, or
+          institutions controlling the servers, have sole control over the data, which makes those systems prone to
+          censorship, corruption, and attack.
+  <br><br>
+          In the meantime, with the rise of the personal computer and the introduction of the Internet Protocol Suite, the
+          Internet became more widespread. However, usability was still a problem. You had to navigate the Internet using
+          command lines, a.k.a. computer language. Tim Berners-Lee resolved this problem with his vision for the World
+          Wide Web. He introduced a standard for creating visual websites with a relatively simple markup language, and
+          navigating the Web with links, which point to other websites with a simple click. From a publishing point of
+          view, the WWW allowed everyone to easily be an equal contributor to information available on the Internet.
+          However, data was still stored and managed behind the walled garden of servers.
+  <br><br>
+          In 1982, David Chaum introduced the concept of Blind signatures, which guaranteed the privacy of the sender of
+          information. It was conceptualized for use in voting systems and digital cash systems. Chaum introduced the idea
+          of “Ecash” as an anonymous cryptographic electronic money or electronic cash system, which was commercialized
+          through his company “Digicash” and used as a micropayment system at one US bank from 1995 to 1998. The system
+          was dissolved in 1998, possibly because he was ahead of his time, as e-commerce applications were not that
+          widespread yet.
+  <br><br>
+  <div class="imgvirtual"><img src="./blockchain-market-revenue-2.jpg" alt="virtual"  height="300" width="900"/></div>
+  <p>
+
+  
+          In 1991, Stuart Haber and W. Scott Stornetta introduced a system where document timestamps could not be tampered
+          with, introducing the earliest academic works on a cryptographically secured chain of blocks. Their aim was to
+          certify when a document was created or modified “in a world in which all text, audio, pictures, and video
+          documents are in digital form and in easily modifiable media.” In their initial proposals, they used centralized
+          timestamping services. They then tried to distribute trust by requiring several users — that were selected
+          through pseudo-random number generators — to timestamp the hash, instead of a centralized institution. A year
+          later, in 1992, Bayer, Haber, and Stornetta wrote another paper where they included Merkle trees in the
+          mechanism. This improved the system efficiency by allowing several document certificates to be collected into
+          one block.
+  <br><br>
+          In 1997, Adam Back introduced “Hashcash,” the first Proof-of-Work function, to limit email spam and denial of
+          service attacks by forcing computers to invest with computational work. The original idea was proposed by
+          Cynthia Dwork and Moni Naor in their 1992 paper, “Pricing via Processing or Combatting Junk Mail.”
+  <br><br>
+          In 2004, the concept introduced by Hashcash was also used as a mining mechanism in “B-money,” a proposal by Wei
+          Dai for an “anonymous, distributed electronic cash system.” It was proposed on the “cypherpunk mailing list,”
+          which represented a group of activists advocating use of strong cryptography and privacy-enhancing technologies
+          over the Internet. Many of the above mentioned individuals who contributed key technologies that were later used
+          in Bitcoin were active “cypherpunks.”
+  <br><br>
+
+ 
+          In 1998, Nick Szabo designed a mechanism for a decentralized digital currency — “BitGold” — where he implemented
+          many of his prior ideas around smart contracts and added a PoW-based consensus algorithm where computing power
+          would be spent to solve cryptographic puzzles (read more: Part 1 — Smart Contracts). BitGold was never deployed,
+          possibly because it could not resolve the problem of double-spending in a fully decentralized, sybil
+          attack–resistant way. Szabo was speculated by many to be Satoshi Nakamoto, Bitcoin’s anonymous creator, but it
+          is a rumor he has always denied.
+  <br><br>
+          In 1999, “Napster,” a music-sharing application, introduced the concept of P2P networks that changed the way
+          data was stored and distributed over the Internet. Napster created a virtual overlay network for decentralized
+          file sharing applications, which was independent from the physical network of the Internet, removing the “single
+          point of failure” of centralized data systems. However, Napster relied on the operation of central indexing
+          servers, and was thus susceptible to shutdown, after copyright infringement claims and a legal battle.
+  <br><br>
+          A new family of file sharing protocols spearheaded by Gnutella in 2000 eliminated such central points of
+          failure. It allowed users to find each other and connect remotely, searching every node on the network, and
+          therefore was more decentralized and censorship resistant. While Gnutella resolved the decentralization problem,
+          they did not resolve the privacy problem. Third-generation file sharing networks like BitTorrent used
+          distributed hash tables to store resource locations throughout the entire network, in a cryptographically secure
+          way. Distributed hash tables not only replaced indexing servers but also guaranteed anonymity of its network
+          actors and all data being shared over the network. These distributed hash tables are now also used by blockchain
+          networks and other Web3 protocols like IPFS and Ethereum. While P2P networks, since the emergence of Napster,
+          have resolved the problem of efficiently distributing data within a network, they did not resolve decentralized
+          validation or verification of data. Neither did they solve the free-rider problem, the fact that large numbers
+          of users would use resources shared by other users while not contributing with files themselves. Users did not
+          have a short-term economic incentive to upload files and instead consumed resources while degrading their own
+          performance.
+  <br><br>
+          In 2004, Hal Finney introduced a reusable PoW system (RPoW), a concept where the value of a token is guaranteed
+          by the value of the real-world resources required to “mint” a PoW token. The fact that Finney received the first
+          Bitcoin transaction from Satoshi Nakamoto in 2009, and that he apparently lived in the same town as a person
+          called “Dorian Satoshi Nakamoto,” led to speculation that he may have been Satoshi, a rumor that he always
+          denied.
+  <br><br>
+          Modern P2P networks such as Napster suffered from a missing incentive mechanism for network contributions, and
+          early e-cash ideas were not able to defend against sybil attacks. The Bitcoin white paper, published in 2008
+          under the pseudonym Satoshi Nakamoto, resolved these issues by proposing a sybil attack–resistant incentive
+          mechanism for collective validation of data. Proof-of-Work resolved the free-rider problem of previous P2P
+          networks by introducing tokenized incentives to motivate all actors to contribute to the system in a truthful
+          manner. Bitcoin was proposed in the aftermath of the financial crisis of 2008 and the collapse of major banks
+          like Lehman Brothers. The aim was to provide a system for P2P electronic cash without banks. While the first
+          specifications were implemented by Satoshi, a group of dedicated individuals gradually took over to implement
+          further development of the code, which was finalized and deployed in early 2009. Interestingly, the Bitcoin
+          white paper only mentioned a “chain of blocks.” The term “blockchain” became widespread years later, when people
+          started to replicate the Bitcoin codebase for developing similar blockchain-based protocols.
+          <br><br>
+          Even though Bitcoin was never designed with file sharing in mind, it eventually inspired a new class of P2P
+          storage frameworks, a crucial building block for the Web3. Such decentralized storage networks can now use the
+          power of tokens to build on the legacy of previous file-sharing protocols, using a blockchain as a universal
+          state layer. Bitcoin also spurred a lot of research around sybil attack–resistant consensus mechanisms. Sibyl
+          attack resistance, however, also depends on the resilience of the assumptions made on how network actors will
+          react to economic incentives. How people react to incentives has long been a field of study in economics. In
+          2007, Hurwicz, Maskin, and Myerson won the Nobel Prize in economics for their research on Mechanism Design, an
+          emerging field of research (read more: Part 4 — Purpose-Driven Tokens).</p>
+        </p>
+
+        </p>
+      </div>
+    </div>
+    
+  </div>
+
+</body>
+<script>
+ 
+        document.getElementById('gotoblogpage').onclick = function () {
+        location.href = "{% url 'Blogs' %}"
+      }
+    </script>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  {% load static %}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/Navbar.css' %}"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+    integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+  <title>Digital Marketing</title>
+</head>
+
+<body>
+  <div class="vlogdata">
+    <div class="vlognav">
+      <div>
+        <h1 class="vlogheading">What is Digital Marketing?</h1>
+      </div>
+      <div id="gotoblogpage" class="gotobtn"><button class="btn">Go To Blog Page</button></div>
+    </div>
+    <div>
+      <div class="vlogdata">
+        <p>For those of us living and breathing the digital marketing world, we’ve known for a long time how effective
+          digital marketing can be. You will get results that you just can’t get anymore from traditional marketing
+          tactics.
+          <br>
+          <br>
+          But if you’ve never used digital marketing, it can seem like you are taking a massive step into unknown
+          territory. There’s lots of confusing new tactics, people keep talking in acronyms, and funnels seem very
+          important.
+          You should know up front. You are taking a massive step in the direction of business success.
+          <br><br>
+          Print ads, radio spots, and direct mail may sound sexy, but with today’s connected consumer, these tactics
+          don’t make much of an impact on traffic numbers, sales volume, or order values.
+          That’s why successful businesses rely on digital marketing.
+          So I’m here to tell you what digital marketing is, how it’s done, and how you can benefit from these tactics
+          that have been proven to raise sales and boost profits.
+          <br><br>
+        <h2>Digital Marketing Defined</h2>
+        <p>
+          Let’s start with the basics…
+          <br>
+          What is digital marketing?
+          <br>
+          Digital marketing is the act of promoting and selling products and services by leveraging online marketing
+          tactics such as social media marketing, search marketing, and email marketing.
+          <br>
+          That’s the formal definition.
+          <br>
+          But honestly, digital marketing is just marketing.
+          <br>
+          And rule #1 in marketing is to make the right offer at the right time in the right place. You need to connect
+          with your customer where they are.
+          <br>
+          <div class="imgvirtual"><img src="{% static 'media/digimark1.png' %}" alt="virtual"  height="300" width="900"/></div>
+         <p>It’s no surprise that today’s consumers are online: hanging out in social media, staying updated on news sites
+          and blogs, and searching online when they have a need.
+          <br>
+          That’s why, for better marketing results, you need to be online too—getting people’s attention, building
+          interest in your products and services, and driving sales with digital marketing.
+          <br>
+          And it works so well, marketers don’t think of it as an alternative to “traditional” marketing. They’re just
+          excited about the results they’re able to generate.</p> 
+        <h2>How Digital Marketing Works</h2>
+       
+        <p>
+          Digital marketing isn’t only about “being there” when your customers are ready to buy. It’s about creating the
+          desire to buy and persuading them to buy sooner (and possibly more often).
+          It’s also about being more than a merchant. Through digital marketing, you can actually become a guide and a
+          trusted friend—so when you make a recommendation, people are eager to listen
+          <br><br>
+
+        </p>
+      
+        </p>
+
+
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+<script>
+ 
+  document.getElementById('gotoblogpage').onclick = function () {
+  location.href = "{% url 'Blogs' %}"
+}
+</script>
+</html>

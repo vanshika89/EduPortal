@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  {% load static %}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/Navbar.css' %}"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+    integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+  <title>Home_page</title>
+</head>
+
+<body>
+  <div class="NavBar">
+    <div class="menu">
+      <div class="navtop">
+        <div class="icon">
+          <h3><span class="Eicon" style="color: #0662db ;">Edu</span><span class="edu">Portal</span> <i
+              class="bi bi-pen-fill pen"></i></h3>
+        </div>
+        <div class="list_menu">
+          <ul>
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'success' %}">Courses</a></li>
+            <li><a href="{% url 'Blogs' %}">Blogs</a> </li>
+            <li><a href="{% url 'index' %}">Student Forum</a></li>
+            <li><a href="{% url 'CareerCouncelling' %}">Career Councelling</a></li>
+            <li><a href="{% url 'login' %}"><span>Log Out</span><i class="bi bi-box-arrow-in-right log"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="HomePage">
+      <div class="homediv">
+        <div class="text">
+          <h3 class="blogheading">Career Councelling <span><i class="bi bi-arrow-down"></i></span></h3>
+        </div>
+        <div class="image">
+          <img src="{% static 'media/car.png' %}" alt="online-edu" width="600" height="400" />
+        </div>
+      </div>
+    </div>
+    <div class="careerconcelling">
+      <div>
+        <h1>Talk to our career experts</h1>
+      </div>
+      <div class="councelling">
+        <div>
+          <img src="{% static 'media/profilee.png' %}" alt="profile" height="80" width="80" />
+          <h4>Name</h4>
+          <p><span>Contact No. :</span> <span> 123456789</span></p>
+          <p><span>Email-ID : </span> abcd@gmail.com</p>
+        </div>
+        <div>
+          <img src="{% static 'media/profilee.png' %}" alt="profile" height="80" width="80" />
+          <h4>Name</h4>
+          <p><span>Contact No. :</span> <span> 123456789</span></p>
+          <p><span>Email-ID : </span> abcd@gmail.com</p>
+        </div>
+        <div>
+          <img src="{% static 'media/profilee.png' %}" alt="profile" height="80" width="80" />
+          <h4>Name</h4>
+          <p><span>Contact No. :</span> <span> 123456789</span></p>
+          <p><span>Email-ID : </span> abcd@gmail.com</p>
+        </div>
+        <div>
+          <img src="{% static 'media/profilee.png' %}" alt="profile" height="80" width="80" />
+          <h4>Name</h4>
+          <p><span>Contact No. :</span> <span> 123456789</span></p>
+          <p><span>Email-ID : </span> abcd@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="careerconcelling">
+      <div class="councelling">
+        <div>
+          <img src="{% static 'media/profilee.png' %}" alt="profile" height="80" width="80" />
+          <h4>Name</h4>
+          <p><span>Contact No. :</span> <span> 123456789</span></p>
+          <p><span>Email-ID : </span> abcd@gmail.com</p>
+        </div>
+        <div>
+          <img src="{% static 'media/profilee.png' %}" alt="profile" height="80" width="80" />
+          <h4>Name</h4>
+          <p><span>Contact No. :</span> <span> 123456789</span></p>
+          <p><span>Email-ID : </span> abcd@gmail.com</p>
+        </div>
+        <div>
+          <img src="{% static 'media/profilee.png' %}" alt="profile" height="80" width="80" />
+          <h4>Name</h4>
+          <p><span>Contact No. :</span> <span> 123456789</span></p>
+          <p><span>Email-ID : </span> abcd@gmail.com</p>
+        </div>
+        <div>
+          <img src="{% static 'media/profilee.png' %}" alt="profile" height="80" width="80" />
+          <h4>Name</h4>
+          <p><span>Contact No. :</span> <span> 123456789</span></p>
+          <p><span>Email-ID : </span> abcd@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="getintouch">
+      <div>
+        <h1>Contact Us</h1>
+      </div>
+      <div class="form">
+        <form>
+          <div class="formdata"><label>Enter Your Name {{form.username}} {{ form.username.errors }}</label></div>
+          <div class="formdata"><input type="text" value=""></div>
+          <div class="formdata"><label>Enter Your Contact No</label></div>
+          <div class="formdata"><input type="number" value=""></div>
+          <div class="formdata"><label>Enter Your Email-ID {{form.email}} {{ form.email.errors }}</label></div>
+          <div class="formdata"><input type="text" value=""></div>
+          <div class="formdata"><button class="btn">Submit</button></div>
+        </form>
+      </div>
+    </div>
+    <div>
+
+</body>
+<script src="./Navbar.js"></script>
+
+</html>
