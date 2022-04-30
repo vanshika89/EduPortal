@@ -1,0 +1,17 @@
+{% extends 'blogbase.html' %}
+{% block content %}
+<br>
+<h1>{{ article.title }}</h1>
+<h4>Posted on {{ article.createAT }}</h4>
+<h4>
+    Asked By:
+    {% for author in article.authors.all %}
+    <a href="{% url 'get_author' author.id %}">
+        {{ author }},</a>
+{% endfor %}</h4><br>
+<p>
+    {{ article.content }}
+</p>
+<br>
+
+{% endblock %}

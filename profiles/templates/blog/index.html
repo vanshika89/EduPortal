@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="HomePage">
+      <div class="homediv">
+        <div class="text">
+          <h1 class="blogheading">Student Forum<span><i class="bi bi-arrow-down"></i></span></h1>
+        </div>
+        <div class="imagess">
+          <img src="{% static 'media/Courses.png' %}" alt="online-edu" width="800" height="500" />
+        </div>
+      </div>
+</div>
+<ul>{% for article in latest_articles %}
+    <li>
+    <div class="blogs">
+    <div class="imagess">
+
+        <img  src="{% static 'media/digital.png' %}" height="50" width="100" /></div>
+                     <div class="content"><h2><a href="{% url 'get_article' article.id %}">{{ article }}</a></h2>
+<h3>Created At {{ article.createAT }}</h3>
+<h4>
+    Written By:
+    {% for author in article.authors.all %}
+        {{ author }}</h4></div></div></div></li>
+{% endfor %}
+    {% endfor %}
+    <center><h1>Post New Question</h1>
+    {% if success %}
+        <p>Form submitted successfully</p>
+    {% endif %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <input type="text" name="title" placeholder="Title"/>
+        <textarea name="content" placeholder="Content"></textarea>
+        <select name="author">
+            {% for author in authors %}
+                <option value="{{ author.id }}">{{ author.name }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form></center>
+</ul>
+<br>
+<br>
+<br>
+
+{% endblock content %}
