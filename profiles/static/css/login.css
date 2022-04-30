@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,100&family=Roboto:wght@100;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,100&family=Roboto:wght@100;400&display=swap');
+
+body{
+  margin:0;
+  padding:0;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+   float:right;
+   height: 445px;
+   margin-left: 680px;
+  width: 480px;
+  box-shadow: 0 0 10px black;
+  padding: 25px;
+  margin: 6% auto 120;
+  text-align:center;
+   background:linear-gradient(315deg,#ffffff,#d7e1ec);
+   color: #0b4f80;
+   margin-bottom: 90px;
+   margin-top: 30px;
+   text-decoration: none;
+}
+
+button[ type ="button"]{
+width:50%;
+height:30px;
+background-image:linear-gradient(to bottom right,#0048CE,#3A77E7);
+cursor: pointer;
+border: snow;
+color: whitesmoke;
+border-radius: 25px;
+margin: 2vh 0;
+font-size: 20px;
+}
+button[ type ="button"]:hover{
+border-color:#1c8adb;
+transition: .5s;
+
+}
+.input-box{padding: 6px 18px;outline: none ; border: 1px solid rgb(185, 185, 185); border-radius: 8px;}
+
+.service{margin: 2vh 0;}
+
+.formsign div{margin-bottom: 3vh;}
+.email , .pass{width: 100%;}
